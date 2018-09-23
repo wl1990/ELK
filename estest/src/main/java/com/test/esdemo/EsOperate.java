@@ -132,7 +132,7 @@ public class EsOperate {
         getRequest.preference("preference");//设置preference值
         getRequest.realtime(false);//设置realtime为false，默认是true
         getRequest.refresh(true);//在检索文档之前执行刷新（默认为false）
-        getRequest.version(2);//设置版本
+     //   getRequest.version(2);//设置版本
         getRequest.versionType(VersionType.EXTERNAL);//设置版本类型
         GetResponse getResponse = restHighLevelClient.get(getRequest);
         if(getResponse.isExists()){
