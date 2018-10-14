@@ -16,12 +16,11 @@ public class SearchApiMain {
     public static void main(String[] args) throws IOException, URISyntaxException {
         ElasticSearchClient elasticSearchClient = new ElasticSearchClient();
         RestHighLevelClient restHighLevelClient = elasticSearchClient.getResource();
-        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("pmap.sex","f");
 
         BoolQueryBuilder matchQueryBuilder = QueryBuilders.boolQuery();
-        matchQueryBuilder.must(QueryBuilders.termQuery("pmap.sex","f"));
-        matchQueryBuilder.mustNot(QueryBuilders.termQuery("id",1));
-        matchQueryBuilder.mustNot(QueryBuilders.termQuery("id",2));
+        matchQueryBuilder.must(QueryBuilders.termQuery("userId","35797"));
+      //  matchQueryBuilder.must(QueryBuilders.termQuery("projectName","ins-market-internal"));
+      //  matchQueryBuilder.mustNot(QueryBuilders.termQuery("id",2));
       //  matchQueryBuilder.should(QueryBuilders.rangeQuery("utm").from(0,true).to(100,true));
     //    matchQueryBuilder.minimumShouldMatch(1);
 //            matchQueryBuilder.filter();
