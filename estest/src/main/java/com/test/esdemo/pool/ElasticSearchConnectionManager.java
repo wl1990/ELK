@@ -35,9 +35,7 @@ public class ElasticSearchConnectionManager {
 
 
     public static ElasticSearchPool sharePool() {
-        if (connectionManager == null) {
-            throw new ElasticSearchException("Need to call the load method first!");
-        }
+
         for(Map.Entry<String,ElasticSearchPool> entry : poolMap.entrySet()){
             return entry.getValue();
         }
@@ -45,14 +43,11 @@ public class ElasticSearchConnectionManager {
     }
 
     public static ElasticSearchPool sharePool(String clusterName) {
-        if (connectionManager == null) {
-            throw new ElasticSearchException("Need to call the load method first!");
-        }
+
         if (poolMap.containsKey(clusterName)) {
             return poolMap.get(clusterName);
-        } else {
-            throw new ElasticSearchException(clusterName + " connection pool is not exists!");
         }
+        return null;
     }
 
     public static void load() throws IOException, URISyntaxException {
@@ -112,10 +107,7 @@ public class ElasticSearchConnectionManager {
         int poolMaxIdle = 8;
         int poolMinIdle = 0;
         long maxWaitMillis=-1;
-        boolean testOnBorrow = false;
-        boolean testWhileIdle = false;
-        boolean testOnCreate = false;
-        boolean testOnReturn = false;
+
 
         Iterator<Map.Entry<Object, Object>> iterator = properties.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -126,7 +118,7 @@ public class ElasticSearchConnectionManager {
                 if (StringUtils.isNotBlank(value)) {
                     String[] hostAndPort = StringUtils.split(value,":",2);
                     if(hostAndPort.length==2&&Integer.parseInt(hostAndPort[1])>0) {
-                        nodes.add(new HostAndPort(name, hostAndPort[0], Integer.parseInt(hostAndPort[1]), "http"));
+                        nodes.add(new HostAndPort(name, hostAndPort[0], Integer.parseInt(hostAndPort[1]), "tcp"));
                     }
                 }
             }else if(StringUtils.equalsIgnoreCase(name, "cluster.name")){
@@ -139,14 +131,6 @@ public class ElasticSearchConnectionManager {
                 poolMaxIdle = Integer.parseInt(value);
             }else if(StringUtils.equalsIgnoreCase(name, "minIdle")){
                 poolMinIdle = Integer.parseInt(value);
-            }else if(StringUtils.equalsIgnoreCase(name, "testOnBorrow")){
-                testOnBorrow = Boolean.parseBoolean(value);
-            }else if(StringUtils.equalsIgnoreCase(name, "testWhileIdle")){
-                testWhileIdle = Boolean.parseBoolean(value);
-            }else if(StringUtils.equalsIgnoreCase(name, "testOnCreate")){
-                testOnCreate = Boolean.parseBoolean(value);
-            }else if(StringUtils.equalsIgnoreCase(name, "testOnReturn")){
-                testOnReturn = Boolean.parseBoolean(value);
             }else if(StringUtils.equalsIgnoreCase(name, "maxWaitMillis")){
                 maxWaitMillis = Long.parseLong(value);
             }
@@ -166,10 +150,7 @@ public class ElasticSearchConnectionManager {
         clusterConfig.setMaxIdle(poolMaxIdle);
         clusterConfig.setMinIdle(poolMinIdle);
         clusterConfig.setMaxWaitMillis(maxWaitMillis);
-        clusterConfig.setTestOnBorrow(testOnBorrow);
-        clusterConfig.setTestWhileIdle(testWhileIdle);
-        clusterConfig.setTestOnCreate(testOnCreate);
-        clusterConfig.setTestOnReturn(testOnReturn);
+
         clusterConfig.setClusterName(clusterName);
         clusterConfig.setNodes(nodes);
 

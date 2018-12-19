@@ -1,6 +1,5 @@
 package com.test.esdemo.client;
 
-import com.test.esdemo.Esclient;
 import com.test.esdemo.exception.ElasticSearchException;
 import com.test.esdemo.pool.ElasticSearchConnectionManager;
 import com.test.esdemo.pool.ElasticSearchPool;
@@ -12,19 +11,17 @@ import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.main.MainResponse;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.common.Strings;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.cluster.node.DiscoveryNode;
 import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.index.VersionType;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
-import org.elasticsearch.search.fetch.subphase.FetchSourceContext;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.Map;
+import java.util.List;
 
 /**
  * @author : jingma2
@@ -40,13 +37,23 @@ public class ElasticSearchClient {
         System.out.println("-------init es------");
         ElasticSearchConnectionManager.load();
         this.pool = ElasticSearchConnectionManager.sharePool();
+        long start = System.currentTimeMillis();
+        TransportClient client = pool.getResource();
+        List<DiscoveryNode> discoveryNodeList = client.connectedNodes();
+        for(DiscoveryNode discoveryNode : discoveryNodeList){
+            System.out.println("args = [" + discoveryNode.getHostName() + "]");
+        }
+        long end = System.currentTimeMillis();
+        System.out.println("耗时(ms)："+(end-start));
     }
+
     private ElasticSearchClient(String clusterName){
         this.pool = ElasticSearchConnectionManager.sharePool(clusterName);
     }
 
-    public boolean ping(){
-        RestHighLevelClient client = null;
+   /* public boolean ping(){
+       *//* import org.elasticsearch.client.RestHighLevelClient;
+        client = null;
         try{
             client = getResource();
             boolean result = client.ping();
@@ -55,10 +62,10 @@ public class ElasticSearchClient {
         }catch(Exception e){
             returnBrokenResource(client);
             return false;
-        }
-    }
+        }*//*
+    }*/
 
-    public MainResponse info(){
+   /* public MainResponse info(){
         RestHighLevelClient client = null;
         try{
             client = getResource();
@@ -69,9 +76,9 @@ public class ElasticSearchClient {
             returnBrokenResource(client);
             throw new ElasticSearchException(e);
         }
-    }
+    }*/
 
-    public boolean exists(GetRequest getRequest, Header... headers){
+  /*  public boolean exists(GetRequest getRequest, Header... headers){
         RestHighLevelClient client = null;
         try{
             client = getResource();
@@ -82,9 +89,9 @@ public class ElasticSearchClient {
             returnBrokenResource(client);
             throw new ElasticSearchException(e);
         }
-    }
+    }*/
 
-    public GetResponse get(GetRequest getRequest, Header... headers){
+   /* public GetResponse get(GetRequest getRequest, Header... headers){
         RestHighLevelClient client = null;
         try{
             client = getResource();
@@ -95,22 +102,32 @@ public class ElasticSearchClient {
             returnBrokenResource(client);
             throw new ElasticSearchException(e);
         }
-    }
+    }*/
 
-    public RestHighLevelClient getResource(){
-        RestHighLevelClient client = null;
+    public TransportClient getResource(){
+        TransportClient client = null;
         try{
             client = pool.getResource();
             return client;
         }catch(RuntimeException e){
             if(client!=null) {
-                returnBrokenResource(client);
+            //    returnBrokenResource(client);
             }
             throw new ElasticSearchException(e);
         }
     }
 
-    public void returnResource(RestHighLevelClient client){
+   /* public void returnResource(RestHighLevelClient client){
+        try{
+            if(client!=null){
+                this.pool.returnResource(client);
+            }
+        }catch(Exception e){
+            this.pool.returnBrokenResource(client);
+        }
+    }*/
+
+    public void returnResource(TransportClient client){
         try{
             if(client!=null){
                 this.pool.returnResource(client);
@@ -120,7 +137,7 @@ public class ElasticSearchClient {
         }
     }
 
-    public void returnBrokenResource(RestHighLevelClient client){
+    /*public void returnBrokenResource(RestHighLevelClient client){
         pool.returnBrokenResource(client);
     }
 
@@ -160,7 +177,7 @@ public class ElasticSearchClient {
                 .put("index.number_of_replicas",1));
         CreateIndexResponse createIndexResponse = restHighLevelClient.indices().create(request);
         System.out.println("CreateIndexResponse = [" + createIndexResponse + "]");
-    }
+    }*/
 
 
 

@@ -1,8 +1,6 @@
 package com.test.esdemo;
 
 import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.test.esdemo.client.ElasticSearchClient;
 import com.test.esdemo.dto.LogAuditDto;
 import com.test.esdemo.dto.SubOpType;
@@ -12,7 +10,6 @@ import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.index.IndexRequest;
-import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.settings.Settings;
 
 import java.io.IOException;
@@ -21,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AddApiMain {
-    public static void main(String[] args) throws IOException, URISyntaxException {
+  /*  public static void main(String[] args) throws IOException, URISyntaxException {
         ElasticSearchClient elasticSearchClient = new ElasticSearchClient();
         RestHighLevelClient restHighLevelClient = elasticSearchClient.getResource();
      //   restHighLevelClient.
@@ -98,5 +95,5 @@ public class AddApiMain {
 
         return map;
 
-    }
+    }*/
 }
