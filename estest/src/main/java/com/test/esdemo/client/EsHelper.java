@@ -4,25 +4,31 @@ import com.test.esdemo.form.PageForm;
 import com.test.esdemo.utils.BDateUtil;
 import com.test.esdemo.utils.ObjectToObjectUtil;
 import org.elasticsearch.action.ActionFuture;
+import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
+import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsRequest;
+import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse;
 import org.elasticsearch.action.admin.indices.stats.IndexStats;
 import org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest;
 import org.elasticsearch.action.admin.indices.stats.IndicesStatsResponse;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.index.IndexRequest;
-import org.elasticsearch.action.search.SearchRequest;
-import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.action.search.SearchType;
+import org.elasticsearch.action.search.*;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.cluster.node.DiscoveryNode;
+import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.aggregations.AggregationBuilders;
+import org.elasticsearch.search.aggregations.bucket.terms.TermsAggregationBuilder;
+import org.elasticsearch.search.aggregations.metrics.valuecount.ValueCountAggregationBuilder;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.FetchSourceContext;
+import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -345,5 +351,73 @@ public class EsHelper {
             return null;
         }
         return indexStatsMap.get(index);
+    }
+
+    public void bulkInsert(TransportClient client,String index, String type,List<? extends Object> list) throws IllegalAccessException {
+        BulkRequest bulkRequest = new BulkRequest();
+        for(int i=0;i<list.size();i++) {
+            Map<String, Object> esMap = ObjectToObjectUtil.objectToMap(list.get(i));
+            bulkRequest.add(new IndexRequest(index, type, (String) esMap.get("id")).source(esMap));
+        }
+        client.bulk(bulkRequest).actionGet();
+    }
+
+    /**
+     * 分组统计top个
+     * @param index
+     * @param type
+     * @param matchQueryBuilder
+     * @param countname
+     * @param field
+     * @return
+     */
+    public SearchRequest groupByCountRequest(String index,String type,BoolQueryBuilder matchQueryBuilder,String countname,String field,int topSize) {
+        ValueCountAggregationBuilder aggregationBuilder = AggregationBuilders.count("count_"+countname).field(field);
+        TermsAggregationBuilder termsAggregationBuilder = AggregationBuilders.terms("by_"+countname).field(field);
+        termsAggregationBuilder.subAggregation(aggregationBuilder);
+        termsAggregationBuilder.size(topSize);
+        SearchRequest searchRequest = new SearchRequest(index);
+        searchRequest.types(type);
+        searchRequest.searchType(SearchType.DEFAULT);
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query(matchQueryBuilder);
+        searchSourceBuilder.aggregation(termsAggregationBuilder);
+        searchRequest.source(searchSourceBuilder);
+        return searchRequest;
+    }
+    public SearchResponse prepareScrollPages(TransportClient client, BoolQueryBuilder matchQueryBuilder, String index, String type, Map<String,SortOrder> orderCol, int pageSize) {
+        SearchRequestBuilder requestBuilder=client.prepareSearch(index).setTypes(type);
+        if(orderCol!=null){
+            for(Map.Entry<String,SortOrder> entry:orderCol.entrySet()){
+                requestBuilder.addSort(entry.getKey(),entry.getValue());
+            }
+        }
+        requestBuilder.setQuery(matchQueryBuilder);
+        SearchResponse response =requestBuilder.setSize(pageSize).setScroll(new TimeValue(2000)).execute().actionGet();
+        return response;
+    }
+
+    public SearchResponse getScrollPages(TransportClient client, String scrollId) {
+        SearchScrollRequestBuilder searchScrollRequestBuilder = client.prepareSearchScroll(scrollId);
+        // 重新设定滚动时间
+        searchScrollRequestBuilder.setScroll(new TimeValue(4000));
+        // 请求
+        return searchScrollRequestBuilder.get();
+    }
+
+    public static void deleteIndex(TransportClient client,String indexName){
+        if(indexIsExists(client,indexName)){
+            DeleteIndexResponse dResponse = client.admin().indices().prepareDelete(indexName)
+                    .execute().actionGet();
+        }
+    }
+
+    public  static boolean indexIsExists(TransportClient client,String index){
+        IndicesExistsRequest request = new IndicesExistsRequest(index);
+        IndicesExistsResponse response = client.admin().indices().exists(request).actionGet();
+        if(response.isExists()){
+            return true;
+        }
+        return false;
     }
 }
