@@ -12,11 +12,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AddApiMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/AddApiMain.java">
+      <file leaf-file-name="ElasticSearchConnectionManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchConnectionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="50" column="49" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="49" />
+            <state relative-caret-position="968">
+              <caret line="168" column="33" lean-forward="true" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EsHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/client/EsHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="893">
+              <caret line="326" column="43" lean-forward="true" selection-start-line="326" selection-start-column="43" selection-end-line="326" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getHitById#0;class#EsHelper#0" />
+                <element signature="method#esHitToObject#0;class#EsHelper#0" />
+                <element signature="method#esUpdate#0;class#EsHelper#0" />
+                <element signature="method#getObjectById#0;class#EsHelper#0" />
+                <element signature="method#delete#0;class#EsHelper#0" />
+                <element signature="method#getSearchHitsPages#0;class#EsHelper#0" />
+                <element signature="method#getSearchHitsPages#1;class#EsHelper#0" />
+                <element signature="method#uniqueCheckAndInsert#0;class#EsHelper#0" />
+                <element signature="method#getRoutes#0;class#EsHelper#0" />
+                <element signature="method#distributeMonth#0;class#EsHelper#0" />
+                <element signature="method#getIndexs#0;class#EsHelper#0" />
+                <element signature="method#getIndexDetail#0;class#EsHelper#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractEntityDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/impl/AbstractEntityDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="45" column="89" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#bulkInsert#0;class#AbstractEntityDao#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ILogAuditBiz.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/biz/ILogAuditBiz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="7" column="77" lean-forward="true" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateRangeAggregationMain.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/DateRangeAggregationMain.java">
+      <file leaf-file-name="LogAuditBizImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/biz/impl/LogAuditBizImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="435">
+              <caret line="15" column="78" lean-forward="true" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,53 +82,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoolQueryBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/index/query/BoolQueryBuilder.java">
+      <file leaf-file-name="ILogAuditDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/ILogAuditDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2967">
-              <caret line="176" column="28" selection-start-line="176" selection-start-column="28" selection-end-line="176" selection-end-column="28" />
+            <state relative-caret-position="116">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchSourceBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/search/builder/SearchSourceBuilder.java">
+      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Java/jdk1.8/src.zip!/java/lang/Class.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11017">
-              <caret line="576" column="61" selection-start-line="576" selection-start-column="43" selection-end-line="576" selection-end-column="61" />
+            <state relative-caret-position="254">
+              <caret line="3410" column="34" lean-forward="true" selection-start-line="3410" selection-start-column="34" selection-end-line="3410" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AggregationBuilders.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/search/aggregations/AggregationBuilders.java">
+      <file leaf-file-name="LogAuditDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/impl/LogAuditDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3841">
-              <caret line="269" column="59" selection-start-line="269" selection-start-column="55" selection-end-line="269" selection-end-column="59" />
-              <folding>
-                <element signature="e#11879#11880#0" expanded="true" />
-                <element signature="e#11935#11936#0" expanded="true" />
-                <element signature="e#12119#12120#0" expanded="true" />
-                <element signature="e#12179#12180#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateRangeAggregationBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/search/aggregations/bucket/range/DateRangeAggregationBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2438">
-              <caret line="106" column="59" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchApiMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/SearchApiMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="23" column="92" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="92" />
+            <state relative-caret-position="203">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ElasticSearchClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/client/ElasticSearchClient.java">
+      <file leaf-file-name="IEntityDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/IEntityDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3059">
-              <caret line="159" column="52" selection-start-line="159" selection-start-column="52" selection-end-line="159" selection-end-column="52" />
+            <state relative-caret-position="174">
+              <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,11 +124,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseTermQueryBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/index/query/BaseTermQueryBuilder.java">
+      <file leaf-file-name="LogAuditEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/entity/LogAuditEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1679">
-              <caret line="110" column="62" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="62" />
+            <state relative-caret-position="145">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="27" />
+              <folding>
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,17 +179,39 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/exception/ElasticSearchException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/utils/PunctuationConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/ElasticSearchConnectionManager.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/elasticsearch/es-config-serverlog.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/EsOperate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchConnectionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dto/SubOpType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dto/LogAuditDto.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/AddApiMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/client/ElasticSearchClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/SearchApiMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/AddApiMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/DateRangeAggregationMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchPoolTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/MainBoot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchClientFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchPool.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/elasticsearch/es-config-serverlog.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/client/ElasticSearchClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/form/PageForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/utils/ObjectToObjectUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/utils/BDateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/client/TypeMatchManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dto/UrlSceneMapDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/index/EsIndexInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/client/EsHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/entity/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/annotion/EntityInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/entity/LogAuditEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/LogAuditDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/ILogAuditDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/impl/LogAuditDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/biz/ILogAuditBiz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/impl/AbstractEntityDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/IEntityDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/esdemo/biz/impl/LogAuditBizImpl.java" />
       </list>
     </option>
   </component>
@@ -171,8 +233,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="103" />
-    <option name="y" value="50" />
+    <option name="x" value="116" />
+    <option name="y" value="74" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -181,6 +243,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,7 +285,46 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="esdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="estest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="esdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="estest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="esdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="estest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="esdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="estest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="esdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="estest" type="b2602c69:ProjectViewProjectNode" />
@@ -242,8 +345,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -256,17 +357,20 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../elasticsearch-pool" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.test.esdemo" />
+      <recent name="com.test.esdemo.dto" />
+      <recent name="com.test.esdemo.utils" />
       <recent name="com.test.esdemo.client" />
+      <recent name="com.test.esdemo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\ELK\estest\src\main\java\com\test\esdemo\client" />
       <recent name="D:\workspace\ELK\estest\src\main\java\com\test\esdemo" />
       <recent name="D:\workspace\ELK\estest\src\main\resources" />
     </key>
@@ -283,18 +387,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DateRangeAggregationMain">
-    <configuration name="AddApiMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.esdemo.AddApiMain" />
-      <module name="estest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.esdemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.MainBoot">
     <configuration name="DateRangeAggregationMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.esdemo.DateRangeAggregationMain" />
       <module name="estest" />
@@ -312,7 +405,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.esdemo.client.*" />
+          <option name="PATTERN" value="com.test.esdemo.index.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -324,6 +417,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.test.esdemo.pool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="MainBoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.esdemo.MainBoot" />
+      <module name="estest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.esdemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -388,17 +492,17 @@
       <item itemvalue="Spring Boot.EsMain" />
       <item itemvalue="Application.ElasticSearchPoolTest" />
       <item itemvalue="Application.ElasticSearchClient" />
-      <item itemvalue="Application.AddApiMain" />
       <item itemvalue="Application.SearchApiMain" />
       <item itemvalue="Application.DateRangeAggregationMain" />
+      <item itemvalue="Application.MainBoot" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainBoot" />
+        <item itemvalue="Application.ElasticSearchPoolTest" />
         <item itemvalue="Application.DateRangeAggregationMain" />
         <item itemvalue="Application.SearchApiMain" />
         <item itemvalue="Application.ElasticSearchClient" />
-        <item itemvalue="Application.AddApiMain" />
-        <item itemvalue="Application.ElasticSearchPoolTest" />
       </list>
     </recent_temporary>
   </component>
@@ -421,11 +525,16 @@
       <workItem from="1537407133574" duration="589000" />
       <workItem from="1537581246719" duration="14817000" />
       <workItem from="1538124030369" duration="1378000" />
+      <workItem from="1539997362211" duration="7842000" />
+      <workItem from="1540172547482" duration="1276000" />
+      <workItem from="1540208366019" duration="1389000" />
+      <workItem from="1545187738525" duration="2120000" />
+      <workItem from="1583752301082" duration="8837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68295000" />
+    <option name="totallyTimeSpent" value="89759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,16 +561,15 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.21615472" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3526735" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.19226393" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32764506" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.16040955" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946353" weight="0.19453925" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946353" weight="0.3970421" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32992035" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3048919" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18025751" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -469,6 +577,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.16496018" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -485,7 +594,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/test/esdemo/AddApiMain.java</url>
-          <line>50</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -494,273 +603,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/HostAndPort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/EsMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-client/6.3.2/elasticsearch-rest-client-6.3.2.jar!/org/elasticsearch/client/RestClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="200" selection-start-line="200" selection-end-line="200" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/action/get/GetRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="163" column="22" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/index/VersionType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/utils/PathUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="154" column="41" selection-start-line="154" selection-start-column="36" selection-end-line="154" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/utils/ResourceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/LogEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/ESUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="395" column="10" selection-start-line="395" selection-start-column="10" selection-end-line="395" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchClientFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchPoolConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchPoolTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2.jar!/org/apache/commons/pool2/impl/GenericObjectPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/Pool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/exception/ElasticSearchConnectException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/Esclient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/EsOperate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2046">
-          <caret line="134" column="7" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dto/LogAuditDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dto/SubOpType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2093">
-          <caret line="103" column="49" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch-x-content/6.3.2/elasticsearch-x-content-6.3.2.jar!/org/elasticsearch/common/xcontent/XContentBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1242">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch-x-content/6.3.2/elasticsearch-x-content-6.3.2.jar!/org/elasticsearch/common/xcontent/XContentType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1373">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/client/Requests.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="54" column="49" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/JsonObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/action/index/IndexRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3588">
-          <caret line="203" column="42" selection-start-line="203" selection-start-column="31" selection-end-line="203" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/index/query/QueryBuilders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="62" column="34" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/elasticsearch/es-config-serverlog.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/index/query/QueryBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/action/admin/indices/create/CreateIndexRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1357">
-          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.3.2/elasticsearch-rest-high-level-client-6.3.2.jar!/org/elasticsearch/client/RestHighLevelClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="154" column="31" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/search/aggregations/AggregationBuilders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="150" column="70" lean-forward="true" selection-start-line="150" selection-start-column="70" selection-end-line="150" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/action/admin/indices/create/CreateIndexRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="139" column="30" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/index/query/QueryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/index/query/TermQueryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/index/query/BaseTermQueryBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1679">
@@ -770,7 +612,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/search/aggregations/bucket/range/DateRangeAggregationBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2438">
+        <state relative-caret-position="1610">
           <caret line="106" column="59" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="59" />
         </state>
       </provider>
@@ -779,26 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1840">
           <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/AddApiMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/client/ElasticSearchClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3059">
-          <caret line="159" column="52" selection-start-line="159" selection-start-column="52" selection-end-line="159" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,12 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3841">
           <caret line="269" column="59" selection-start-line="269" selection-start-column="55" selection-end-line="269" selection-end-column="59" />
-          <folding>
-            <element signature="e#11879#11880#0" expanded="true" />
-            <element signature="e#11935#11936#0" expanded="true" />
-            <element signature="e#12119#12120#0" expanded="true" />
-            <element signature="e#12179#12180#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,16 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/SearchApiMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" column="92" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2-sources.jar!/org/elasticsearch/index/query/BoolQueryBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2967">
@@ -860,10 +666,325 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.4.1/elasticsearch-5.4.1.jar!/org/elasticsearch/client/transport/TransportClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="226" column="30" lean-forward="true" selection-start-line="226" selection-start-column="11" selection-end-line="226" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/Esclient.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/EsMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/EsOperate.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/ESUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/LogEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/SearchApiMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/utils/PathUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2553">
+          <caret line="154" column="41" selection-start-line="154" selection-start-column="36" selection-end-line="154" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/Pool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2.jar!/org/apache/commons/pool2/PooledObjectFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2-sources.jar!/org/apache/commons/pool2/PooledObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="72" column="36" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchClientFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/MainBoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/form/PageForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/utils/ObjectToObjectUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/utils/BDateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4350">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/index/IndexMappingModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/index/TypeMatchManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/AddApiMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/DateRangeAggregationMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="196">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchPoolTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="28" column="50" selection-start-line="21" selection-start-column="7" selection-end-line="28" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dto/SubOpType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dto/UrlSceneMapDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/index/EsIndexInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/annotion/EntityInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/entity/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/elasticsearch/es-config-serverlog.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/client/ElasticSearchClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/client/EsHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="326" column="43" lean-forward="true" selection-start-line="326" selection-start-column="43" selection-end-line="326" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getHitById#0;class#EsHelper#0" />
+            <element signature="method#esHitToObject#0;class#EsHelper#0" />
+            <element signature="method#esUpdate#0;class#EsHelper#0" />
+            <element signature="method#getObjectById#0;class#EsHelper#0" />
+            <element signature="method#delete#0;class#EsHelper#0" />
+            <element signature="method#getSearchHitsPages#0;class#EsHelper#0" />
+            <element signature="method#getSearchHitsPages#1;class#EsHelper#0" />
+            <element signature="method#uniqueCheckAndInsert#0;class#EsHelper#0" />
+            <element signature="method#getRoutes#0;class#EsHelper#0" />
+            <element signature="method#distributeMonth#0;class#EsHelper#0" />
+            <element signature="method#getIndexs#0;class#EsHelper#0" />
+            <element signature="method#getIndexDetail#0;class#EsHelper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dto/LogAuditDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/pool/ElasticSearchConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="168" column="33" lean-forward="true" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="3410" column="34" lean-forward="true" selection-start-line="3410" selection-start-column="34" selection-end-line="3410" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/entity/LogAuditEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/biz/ILogAuditBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="77" lean-forward="true" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/impl/LogAuditDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/impl/AbstractEntityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="45" column="89" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#bulkInsert#0;class#AbstractEntityDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/ILogAuditDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/dao/IEntityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/esdemo/biz/impl/LogAuditBizImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="78" lean-forward="true" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
